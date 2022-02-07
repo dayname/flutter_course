@@ -113,18 +113,18 @@ class LAb1HomePage extends StatelessWidget {
         elevation: 10,
         shape: CircleBorder(),
       ),
-    );;
+    );
   }
 
   Widget exercise5() {
     return OutlinedButton(
       onPressed: (){},
       child: Text(
-        " Button to press", style: TextStyle(fontSize: 24, color: Colors.deepOrangeAccent),),
+        "Just click here ", style: TextStyle(fontSize: 24, color: Colors.deepOrangeAccent),),
       style: OutlinedButton.styleFrom(
           primary: Colors.indigoAccent,
           padding: EdgeInsets.symmetric(vertical: 16,horizontal: 80),
-          side: BorderSide(color: Colors.amber,width: 2)
+          side: BorderSide(color: Colors.amber.shade400,width: 2)
       ),
     );
   }

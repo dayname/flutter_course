@@ -110,7 +110,7 @@ class LAb1HomePage extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         primary: Colors.black,
         padding: EdgeInsets.all(16),
-        elevation: 10,
+        elevation: 11,
         shape: CircleBorder(),
       ),
     );
@@ -120,7 +120,7 @@ class LAb1HomePage extends StatelessWidget {
     return OutlinedButton(
       onPressed: (){},
       child: Text(
-        "Just click here ", style: TextStyle(fontSize: 24, color: Colors.deepOrangeAccent),),
+        "Start button", style: TextStyle(fontSize: 24, color: Colors.deepOrangeAccent),),
       style: OutlinedButton.styleFrom(
           primary: Colors.indigoAccent,
           padding: EdgeInsets.symmetric(vertical: 16,horizontal: 80),

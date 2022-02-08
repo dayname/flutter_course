@@ -25,8 +25,8 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: const Color(0xfff4f4f4),
       /*******************--[focus here 🧐]--*******************/
       appBar: AppBar(
-        leading: const Icon(Icons.android),
-        title: const Text('App title'),
+        leading: const Icon(Icons.android_sharp),
+        title: const Text('App Title'),
         backgroundColor: Colors.teal,
         elevation: 4,
       ),
@@ -37,14 +37,21 @@ class MyHomePage extends StatelessWidget {
 
   Widget myWidget() {
     return Container(
-        padding: EdgeInsets.all(20),
-        child:
-            /*******************--[focus here 🧐]--*******************/
-
-        /*******************--[focus here 🧐]--*******************/
-        );
+      padding: EdgeInsets.all(20),
+      child:
+          /*******************--[focus here 🧐]--*******************/
+          Container(
+        color: Colors.blueAccent,
+        width: 200,
+        height: 300,
+        child: Text(
+          "Text here",
+          style: TextStyle(
+            fontSize: 23,
+          ),
+        ),
+      ),
+      /*******************--[focus here 🧐]--*******************/
+    );
   }
-
-
-
 }

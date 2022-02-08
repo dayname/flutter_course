@@ -40,18 +40,48 @@ class MyHomePage extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child:
           /*******************--[focus here 🧐]--*******************/
-          Container(
-        color: Colors.blueAccent,
-        width: 200,
-        height: 300,
-        child: Text(
-          "Text here",
-          style: TextStyle(
-            fontSize: 23,
-          ),
+          container3(),
+
+      /*******************--[focus here 🧐]--*******************/
+    );
+  }
+
+  Container container3() {
+    return Container(
+      color: Colors.yellow,
+      child: Center(
+        child: Icon(
+          Icons.done,
+          size: 200,
+          color: Colors.deepOrange,
         ),
       ),
-      /*******************--[focus here 🧐]--*******************/
+    );
+  }
+
+  Container container1() {
+    return Container(
+      width: 200,
+      height: 60,
+      decoration: BoxDecoration(
+          color: Colors.deepPurpleAccent,
+          border: Border.all(
+            color: Colors.black,
+            width: 4,
+          ),
+          shape: BoxShape.rectangle),
+      // space between parent and child
+      padding: EdgeInsets.only(top: 13, left: 30),
+      // space between parent and surround it
+      margin: EdgeInsets.only(top: 10, left: 40),
+
+      child: Text(
+        "Quiz Container",
+        style: TextStyle(
+          fontFamily: 'casual',
+          fontSize: 20,
+        ),
+      ),
     );
   }
 }

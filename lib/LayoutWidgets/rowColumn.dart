@@ -40,18 +40,48 @@ class MyHomePage extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child:
         /*******************--[focus here 🧐]--*******************/
-        Column(
-          children: const
-          [
-            Text("l", style: TextStyle( color: Colors.red, fontSize:        50,),),
-            Icon(Icons.favorite, color: Colors.red, size: 50,),
-            Text("Flutter", style: TextStyle( color: Colors.cyan, fontSize: 50,),),
-            FlutterLogo(size: 50),
+        Container(
+          height: 60,
+          width: 300,
+          margin: EdgeInsets.only(left: 70),
+          decoration: BoxDecoration(
+          color: Colors.orangeAccent,
+          border: Border.all(
+            color: Colors.indigo,
+            width: 5,
+          )
+          ),
 
-          ]
+          child: Row (
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const [
+              Icon(Icons.whatshot_rounded, color: Colors.redAccent,),
+              Icon(Icons.android, color: Colors.green,),
+              Icon(Icons.whatshot_rounded, color: Colors.redAccent,),
+            ],
+          ),
         )
         /*******************--[focus here 🧐]--*******************/
     );
+  }
+
+  Container column() {
+    return Container(
+        color: Colors.black45,
+        width: 300,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: const
+          [
+            Text("l", style: TextStyle(color: Colors.red, fontSize:         50,),),
+            Icon( Icons.favorite, color: Colors.red, size:                  50,),
+            Text("Flutter", style: TextStyle( color: Colors.cyan, fontSize: 50,),),
+            FlutterLogo(size: 50),
+          ]
+        ),
+      );
   }
 
   Container row() {

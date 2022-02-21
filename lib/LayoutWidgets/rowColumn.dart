@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child:
             /*******************--[focus here 🧐]--*******************/
-            
+            buttonsy()
         /*******************--[focus here 🧐]--*******************/
         );
   }

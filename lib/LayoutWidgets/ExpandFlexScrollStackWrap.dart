@@ -37,37 +37,91 @@ class MyHomePage extends StatelessWidget {
 
   Widget myWidget() {
     return Container(
-        padding: EdgeInsets.all(20),
-        height: 300,
-        child: Wrap(
+        padding: EdgeInsets.all(8),
+    color: Colors.grey,
+    );
+  }
 
-        )
+  Container Aspectratio1() {
+    return Container(
+      padding: EdgeInsets.all(8),
+      color: Colors.grey,
+      height: 390,
+      child: Column(
+        children: [
+          AspectRatio(
+            aspectRatio: 4/3,
+            child: Image.network(
+              "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
+              fit: BoxFit.cover,
+            ),
+          ),
+          Text(
+            "Hubble",
+            style: TextStyle(
+              fontSize: 50,
+              fontFamily: 'cursive',
+            ),
+          )
+        ],
+      ));
+  }
+
+  Wrap wrap1() {
+    return Wrap(
+      spacing: 10,
+      children: [
+        Image.network(
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
+          width: 175,
+          height: 175,
+          fit: BoxFit.cover,
+        ),
+        Image.network(
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
+          width: 175,
+          height: 175,
+          fit: BoxFit.cover,
+        ),
+        Image.network(
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
+          width: 175,
+          height: 175,
+          fit: BoxFit.cover,
+        ),
+        Image.network(
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
+          width: 175,
+          height: 175,
+          fit: BoxFit.cover,
+        ),
+      ],
     );
   }
 
   Stack stack1() {
     return Stack(
-        children: [
-          Image.network(
-            "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
-            height: 300,
-            fit: BoxFit.contain,
-          ),
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Container(
-              color: Colors.grey,
-              child: Text(
-                "Hubble",
-                style: TextStyle(
-                  fontFamily: 'cursive',
-                  fontSize: 60,
-                ),
+      children: [
+        Image.network(
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg",
+          height: 300,
+          fit: BoxFit.contain,
+        ),
+        Align(
+          alignment: Alignment.bottomLeft,
+          child: Container(
+            color: Colors.grey,
+            child: Text(
+              "Hubble",
+              style: TextStyle(
+                fontFamily: 'cursive',
+                fontSize: 60,
               ),
             ),
-          )
-        ],
-      );
+          ),
+        )
+      ],
+    );
   }
 
   Scrollbar scrollbar1() {

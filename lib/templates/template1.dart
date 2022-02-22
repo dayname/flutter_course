@@ -37,13 +37,11 @@ class MyHomePage extends StatelessWidget {
 
   Widget myWidget() {
     return Container(
-      padding: EdgeInsets.all(20),
-      child:
-      /*******************--[focus here 🧐]--*******************/
-      Text(
-        'Welcome to the Course',
-      ),
-      /*******************--[focus here 🧐]--*******************/
-    );
+        padding: EdgeInsets.all(20),
+        child:
+            /*******************--[focus here 🧐]--*******************/
+
+        /*******************--[focus here 🧐]--*******************/
+        );
   }
 }

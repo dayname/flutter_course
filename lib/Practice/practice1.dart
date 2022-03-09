@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,51 +23,49 @@ class MyAppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Practice make you better"),
+        title: Text("Practice makes you better"),
         leading: Icon(Icons.done),
       ),
-      body: MyWidget(),
+      body: Image.asset("assets/Шершень.jpg"),
     );
   }
 }
 
-MyWidget() {
-  return stack1();
-}
+
 
 Container stack1() {
   return Container(
-  height: 400,
-  padding: EdgeInsets.all(8),
-  color: Colors.teal,
-  child: Stack(
-    children: [
-      Align(
-          alignment: Alignment.topLeft,
-          child: Container(
-            margin: EdgeInsets.all(16),
-            color: Colors.yellow,
-            width:  125,
-            height: 125,
-          )),
-      Align(
-          alignment: Alignment.center,
-          child: Center(
-              child: Container(
-                  padding: EdgeInsets.all(65),
-                  child: Stack(children: [
-                    Align(
-                        alignment: Alignment.topLeft,
-                        child: Container(
-                          padding: EdgeInsets.all(8),
-                          color: Colors.cyan,
-                          width:  125,
-                          height: 125,
-                        ))
-                  ])))),
-    ],
-  ),
-);
+    height: 400,
+    padding: EdgeInsets.all(8),
+    color: Colors.teal,
+    child: Stack(
+      children: [
+        Align(
+            alignment: Alignment.topLeft,
+            child: Container(
+              margin: EdgeInsets.all(16),
+              color: Colors.yellow,
+              width: 125,
+              height: 125,
+            )),
+        Align(
+            alignment: Alignment.center,
+            child: Center(
+                child: Container(
+                    padding: EdgeInsets.all(65),
+                    child: Stack(children: [
+                      Align(
+                          alignment: Alignment.topLeft,
+                          child: Container(
+                            padding: EdgeInsets.all(8),
+                            color: Colors.cyan,
+                            width: 125,
+                            height: 125,
+                          ))
+                    ])))),
+      ],
+    ),
+  );
 }
 
 Scrollbar scrollbar1() {

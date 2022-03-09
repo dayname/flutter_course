@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   bool isChanged = true;
   int counter = 0;
   bool isHere = true;
+
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
@@ -148,15 +149,19 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                FlutterLogo(style: counter == 0 ? FlutterLogoStyle.markOnly : counter == 1 ? FlutterLogoStyle.horizontal : FlutterLogoStyle.stacked, size: 125,),
-                InkWell(
-                 onTap: (){
-                   setState(() {
-                     counter == 2 ? counter == 0 : counter++;
-                   });
-                 },
-                    child: Icon(Icons.change_circle, size: 50, color: Colors.deepPurple,)),
-    ],),
+                  FlutterLogo(style: counter == 0 ? FlutterLogoStyle.markOnly : counter == 1 ? FlutterLogoStyle.horizontal : FlutterLogoStyle.stacked, size: 125,),
+                  InkWell(
+                      onTap: (){
+                        setState(() {
+                          if (counter < 2)
+                            counter++;
+                          else
+                            counter = 0;
+                        });
+                      },
+                      child: Icon(Icons.change_circle, size: 50, color: Colors.deepPurple,)),
+
+                ],),
             ),
       ),
     )

@@ -44,9 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: AnimatedContainer(
         margin: EdgeInsets.all(20),
-        duration: Duration(milliseconds: 450),
+        duration: Duration(milliseconds: 1000),
         width: screenWidth,
-        height:  isOpened ? screenHeight : 60,
+        height: isOpened ? screenHeight : 60,
         color: Colors.indigo,
         child: Stack(
           children: [

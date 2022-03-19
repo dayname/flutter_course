@@ -94,11 +94,15 @@ class _AddPostScreenState extends State<AddPostScreen> {
         }));
 
     print(response.body);
-    if (response.statusCode == 201) {
+    if (response.statusCode == 200) {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text('Comment Added')));
     } else
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text('Error ${response.body}')));
   }
+
+
+
+
 }
